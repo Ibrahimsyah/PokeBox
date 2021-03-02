@@ -52,7 +52,7 @@ class DetailActivity : AppCompatActivity() {
             pokemonSpecies.text = it.species
             pokemonHeight.text = buildString {
                 append(it.height)
-                append(" Inches")
+                append(" Feet")
             }
             pokemonWeight.text = buildString {
                 append(it.weight)
