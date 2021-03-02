@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PokeBox</string>
+    <string name="icon_profile">Go to Profile</string>
+    <string name="splash_about">Made with &#10084; by Ibrahimsyah Zairussalam</string>
+</resources>
