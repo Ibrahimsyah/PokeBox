@@ -1,4 +1,4 @@
-package com.zairussalamdev.pokebox.ui
+package com.zairussalamdev.pokebox.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View

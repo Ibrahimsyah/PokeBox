@@ -1,9 +1,10 @@
-package com.zairussalamdev.pokebox
+package com.zairussalamdev.pokebox.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.zairussalamdev.pokebox.R
 
 
 class SplashActivity : AppCompatActivity() {

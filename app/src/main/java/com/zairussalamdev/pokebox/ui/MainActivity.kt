@@ -1,11 +1,12 @@
-package com.zairussalamdev.pokebox
+package com.zairussalamdev.pokebox.ui
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.zairussalamdev.pokebox.ui.PokemonAdapter
+import com.zairussalamdev.pokebox.R
+import com.zairussalamdev.pokebox.ui.adapter.PokemonAdapter
 import com.zairussalamdev.pokebox.utils.DummyData
 
 class MainActivity : AppCompatActivity() {
