@@ -2,4 +2,12 @@
     <string name="app_name">PokeBox</string>
     <string name="icon_profile">Go to Profile</string>
     <string name="splash_about">Made with &#10084; by Ibrahimsyah Zairussalam</string>
+    <string name="detail_description">Description</string>
+    <string name="detail_breed">Breed</string>
+    <string name="species">Species:</string>
+    <string name="height">Height:</string>
+    <string name="weight">Weight:</string>
+
+    <string name="pokemon_image">Pokemon Image</string>
+    <string name="go_to_previous_page">Go To Previous Page</string>
 </resources>

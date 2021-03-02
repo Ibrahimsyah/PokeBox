@@ -1,7 +1,7 @@
 package com.zairussalamdev.pokebox.ui
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -20,7 +20,9 @@ class MainActivity : AppCompatActivity() {
             layoutManager = GridLayoutManager(context, 2)
             setHasFixedSize(true)
             adapter = PokemonAdapter(pokemonList) {
-                Toast.makeText(context, "You clicked ${it.name}!", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this@MainActivity, DetailActivity::class.java)
+                intent.putExtra(DetailActivity.POKEMON_EXTRA, it)
+                startActivity(intent)
             }
         }
     }
