@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.zairussalamdev.pokebox.R
 import com.zairussalamdev.pokebox.data.entities.Pokemon
-import kotlin.random.Random
+import com.zairussalamdev.pokebox.utils.Color
 
 class PokemonAdapter(
     private val pokemonList: List<Pokemon>,
@@ -26,8 +26,7 @@ class PokemonAdapter(
                 val pokemonImage = findViewById<ImageView>(R.id.pokemon_image)
                 val pokemonTypeRv = findViewById<RecyclerView>(R.id.pokemon_rv_types)
 
-                val colors = context.resources.getIntArray(R.array.tile_colors)
-                val cardColor = colors[Random.nextInt(0, colors.size)]
+                val cardColor = Color.generateRandomColor(itemView.context)
                 pokemonCard.setCardBackgroundColor(cardColor)
 
                 pokemonName.text = pokemon.name

@@ -10,4 +10,13 @@
 
     <string name="pokemon_image">Pokemon Image</string>
     <string name="go_to_previous_page">Go To Previous Page</string>
+
+    <string name="email">Email</string>
+    <string name="dicoding">Profil Dicoding</string>
+    <string name="about">About Me</string>
+    <string name="profile_url">https://www.dicoding.com/users/ibrahimsyah</string>
+    <string name="profile_email">ibra.himsyah10@gmail.com</string>
+    <string name="profile_name">Ibrahimsyah Zairussalam</string>
+    <string name="profile_motto">Man Jadda Wa Jadda</string>
+    <string name="profile_desc">Software engineer with 1 year of professional experience as an intern and part-time worker in software house companies. Currently studying as a third year student of Computer Science (Information System) in University of Brawijaya. High interest to learn new skill, can easily adapt to changes, and happy to working in team </string>
 </resources>

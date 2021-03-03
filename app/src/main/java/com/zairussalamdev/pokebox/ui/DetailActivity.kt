@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide
 import com.zairussalamdev.pokebox.R
 import com.zairussalamdev.pokebox.data.entities.Pokemon
 import com.zairussalamdev.pokebox.ui.adapter.PokemonTypeAdapter
-import kotlin.random.Random
+import com.zairussalamdev.pokebox.utils.Color
 
 class DetailActivity : AppCompatActivity() {
     companion object {
@@ -25,8 +25,7 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
 
         val pokemon: Pokemon? = intent?.getParcelableExtra(POKEMON_EXTRA)
-        val colors = resources.getIntArray(R.array.tile_colors)
-        val color = colors[Random.nextInt(0, colors.size)]
+        val color = Color.generateRandomColor(this)
 
         val detailBackground = findViewById<ScrollView>(R.id.detail_background)
         val detailActionBack = findViewById<ImageView>(R.id.detail_action_back)

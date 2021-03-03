@@ -2,6 +2,7 @@ package com.zairussalamdev.pokebox.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,8 +15,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val pokemonList = DummyData.generatePokemonData()
         val rvPokemon = findViewById<RecyclerView>(R.id.rv_pokemon)
+        val btnProfile = findViewById<ImageButton>(R.id.ic_profile)
+
+        btnProfile.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        val pokemonList = DummyData.generatePokemonData()
         with(rvPokemon) {
             layoutManager = GridLayoutManager(context, 2)
             setHasFixedSize(true)
